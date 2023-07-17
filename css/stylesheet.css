@@ -1,0 +1,183 @@
+*{padding: 0; margin: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+html,body{height: 100%; width: 100%; font-family:"ralewayregular";}
+a,a:hover{text-decoration: none !important;}
+.clear{clear: both;}
+.container{height: 100%; width: 1175px; margin: 0 auto;}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url(../fonts/raleway-regular-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaythin';
+    src: url(../fonts/raleway-thin-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-thin-webfont.woff.) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url(../fonts/raleway-extralight-webfont.woff2.) format('woff2'),
+         url(../fontsraleway-extralight-webfont.woff.) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url(../fonts/raleway-light-webfont.woff2.) format('woff2'),
+         url(../fonts/raleway-light-webfont.woff.) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.site-header{float: left; width: 100%;}
+.site-header .header{  ;padding-top: 45px; position: fixed; width: 100%;-webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; z-index: 1000;}
+.logo{float: left; width: 15%;}
+.nav{float: right; display: inline-block;}
+.nav li{list-style: none; display: inline-block; margin-left: 30px; text-transform: uppercase; margin-top: 30px;}
+.nav li a{ font-size: 14px; font-weight: bold; color: #2c2c2c;  padding-bottom: 10px;}
+.nav li a:hover{border-bottom: 2px solid #ed1e26;}
+.header.shrink {padding-top: 10px;background-color: rgba(255,255,255,0.90); box-shadow: 0 0 5px rgba(0,0,0,0.4); }
+.header.shrink h1{    -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
+
+.bannerslide img{max-width: 100%; width: 100%;}
+.bannerslide .content{font-weight: 100; font-family: "ralewaythin"; position: absolute; top: 200px;}
+.bannerslide .content h1{font-size:90px; color:#ed3e46;  text-transform: capitalize; }
+.bannerslide .content h2{font-size:50px; color:#9dcb28; line-height: 80px;}
+.bannerslide .content h5{font-size:26px; color:#3f3f3f;}
+.site-header a#scrolldown{ background: url(../images/scrolldown.png) no-repeat 0px -65px; width: 48px; height: 65px; position: absolute; left: 0; right: 0; bottom: -10px; margin: 0 auto; display: block; cursor: pointer; transition: all ease 0.5s; -webkit-transition: all ease 0.5s; -moz-transition: all ease 0.5s;  z-index:200}
+.site-header #scrolldown:hover{ background: url(../images/scrolldown.png) no-repeat 0px 0px;}
+#scrolldiv{ position: relative; float: left; width: 100%;}
+#scrolldiv img{max-width:100%; width: 100%;}
+#scrolldiv .div-text{position: absolute; top: 50px; text-transform: capitalize; width: 41%; color:#111800;}
+.div-text h1{ font-size: 55px; font-weight: 500;  font-family: "ralewaythin";}
+.div-text p{font-size: 15px; margin-top: 20px; line-height: 30px;}
+.div-text p a{background: url(../images/arrow2.png) no-repeat 0px -19px ; padding: 0.5px 8px; transition: all ease 0.5s; margin-left: 10px;}
+.div-text p a:hover{width: 19px; height:19px; background: url(../images/arrow2.png) no-repeat 0px 0px ; }
+.div-text ul{ margin-top: 20px;}
+.div-text li{list-style: url(../images/list-style.png); margin-bottom: 15px;}
+.div-text li a{color:#111800; padding-bottom: 5px; border-bottom: 1px solid #111800;}
+.div-text li a:hover{color:#ed1e26; border-color: #ed1e26;}
+.projects{float: left; width: 100%; padding-top: 100px;}
+.projects .heading{float: left; font-size: 55px; font-weight: 100; text-transform: capitalize;font-family: 'ralewayextralight';}
+
+.projects .projectcontent{float: right; display: inline-block; width: 75%; position: relative;}
+.projectcontent h6{color: #191919; font-size: 15px; width: 45%; font-weight: 100; line-height: 30px;}
+ ul#tabs {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; }
+  ul#tabs li {
+    display: inline-block;
+        position: absolute;
+    color: #fff;
+    cursor: pointer;
+    height: 95px;
+    top:0px;}
+      ul#tabs li:first-child{background: url(../images/commercial.png) no-repeat 0px 0px; width: 99px; right: 25%}
+        ul#tabs li:last-child{background: url(../images/residential.png) no-repeat 0px 0px; width: 94px; right: 10%;}
+    ul#tabs li:first-child.active {
+      display: block;
+      background: url(../images/commercial.png) no-repeat 0px -95px;}
+      ul#tabs li:last-child.active {
+      display: block;
+      background: url(../images/residential.png) no-repeat 0px -95px;}
+
+ul#tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul#tab li {
+    display: none;
+    text-align: center;
+        }
+    ul#tab li.active {
+      display: block;
+       }
+    ul#tab li span{
+      font-weight: 400;
+      font-size: 30px;
+      text-transform: capitalize;
+      text-align:  left;
+      display: block;
+       margin-bottom: 50px;
+       
+      }
+      ul#tab li h5{padding-top: 10px;}
+      ul#tab li a h5{ color:#000000;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-top: 10px;
+      }
+      ul#tab li a:hover h5{ color:#ef3e42;}
+.knowmore{ width: 78%; font-size: 15px; font-family: "Myriad Pro"; line-height: 1px; display: block; text-align: center; line-height: 30px; margin-top: 40px;
+margin-left: 12%;}
+.knowmore a{color:#ef3e42; font-size: 12px;  font-weight: 600;}
+.knowmore a:hover{color:#282828;}
+.keyfacts{float:left; width:100%; margin-top: 100px;}
+.keyfacts .background img{ max-width: 100%; width: 100%;}
+.keyfacts .content{position:relative; color:#fff;}
+.keyfacts .content .left{position: absolute; left: 0; bottom:120px; width: 30%;}
+.keyfacts .content .left h1{ font-size: 45px; font-family: 'ralewaylight'; position: relative;}
+.keyfacts .content .left h1:after{ position: absolute; height:7px; width: 75px; content: ""; background-color: #ed1119;top: 80px;left: 0px;  }
+.keyfacts .content .left p{ font-size: 14px; font-family: "Myriad Pro"; margin-top: 85px; letter-spacing: 1px; line-height: 30px;}
+.keyfacts .content .right{position: absolute; right: 0; bottom:120px; width: 70%; }
+.keyfacts .content .right ul{margin:0 auto ;}
+.keyfacts .content .right li{list-style: none; display: inline-block; width: 33%; text-align: center;}
+.keyfacts .content .right li h5{color:#72746e; font-size:14px; font-family: "Myriad Pro"; font-weight: 100; text-transform: uppercase; padding-top:45px; padding-bottom:30px;}
+.keyfacts .content .right .count{font-size: 45px;}
+.keyfacts .content .right .count::after{content: "+";}
+.divimage{float: left; width: 40%; margin-top: 135px; margin-bottom: 135px;}
+.divtext{font-size: 14px; color:#403f3e;line-height: 30px; width: 31%; display: inline-block;margin-left: 10%;  margin-top: 135px; margin-bottom: 135px;}
+.divtext img{margin:35px 0px 30px 0px;}
+.divtext ul{list-style: square; margin-top: 15px; margin-left: 13px;}
+.divtext h1{text-transform: capitalize; font-weight: 500;}
+.divtext a{display: block; height: 70px; width: 70px;background-color: #ee161f; background-image: url(../images/arrow.png); background-repeat: no-repeat; background-position: center; margin-top: 45px;}
+.divtext a:hover{ background-color: #a5ce38; transition:all ease 0.5s;}
+.healthcare{float: left; width: 100%; }
+.healthcare .divtext{}
+.education{float: left; width: 100%; background-color: #ffba00;}
+.education .divimage{ display: inline-block;margin-left: 10%;}
+.education .divtext{float: left;}
+.education .divtext a:hover{ background-color: #000000;}
+.chemicals{float: left; width: 100%; }
+.footer{float: left; width: 100%; text-transform: capitalize;margin-top: 80px; border-top:1px solid #d2d2d2; height: 180px;}
+.footer .container{position: relative;}
+.footer .container::before{ content: ""; position: absolute; height: 80px; width: 309px; background-image: url(../images/footerbuildings.png); background-repeat: no-repeat; background-position: center; left: 27px; top: -78px;}
+.footer span{ color: #222222; font-size: 14px; font-weight: 500; margin-bottom: 20px; display: block;}
+.footer ul{display: inline-block;  vertical-align: top;}
+.footer ul li{list-style: none;  font-size: 13px; margin-bottom: 10px; }
+.footer ul li a{color:#666666; }
+.footer ul li a:hover{color:#a5ce38; }
+.footer .fo1{width: 35%; border-right:1px solid #d2d2d2;  padding-top: 40px; float: left;  height: 100%;}
+.footer .fo1 ul{margin-left: 45px;}
+.footer .fo2{width: 25%; border-right:1px solid #d2d2d2; display: inline-block; padding-top: 40px; padding-left: 55px;  height: 100%;}
+.footer .fo2 li:first-child{ background: url(../images/phone.png) no-repeat;}
+.footer .fo2 li:last-child{ background: url(../images/mail.png) no-repeat;}
+.footer .fo2 li a{margin-left: 30px;}
+.footer .fo2 li:last-child a:hover{color: #d7a70a;}
+.footer .fo3{width: 35%; display: inline-block; padding-top: 40px;padding-left: 55px; color:#666666;}
+.footer .fo3 form{position: relative;}
+.footer .fo3 input{height: 40px; width: 290px; border: 1px solid #e5e5e5; padding-left: 15px; color: #a3a3a3;}
+.footer .fo3 button{height: 40px; width: 40px; background-color: #ee161f; background-image: url(../images/arrow.png); background-repeat: no-repeat; background-position: center; border: none; position: absolute; cursor: pointer;}
+.footer .fo3 button:hover{ background-color: #a5ce38;}
+.footerbottom{float: left; width: 100%;  border-top:1px solid #d2d2d2;}
+.footerbottom .left{float: left;font-size: 12px; color: #7a7a7a; padding: 18px}
+.footerbottom .left a{color:#7a7a7a;}
+.footerbottom .right{float: right; display: inline-block;}
+.footerbottom .right li{display: inline-block; border-right: 1px solid #d2d2d2; margin-left: -4px;}
+.footerbottom .right li a{width: 53px; height: 51px; display: block;}
+.footerbottom a.facebook{ background-image: url(../images/facebook.png); background-repeat: no-repeat; background-position:0 0;  transition:all 0.3s ease 0s;}
+.footerbottom a.twitter{ background-image: url(../images/twitter.png); background-repeat: no-repeat; background-position:0 0;  transition:all 0.3s ease 0s;}
+.footerbottom a.linkdin{ background-image: url(../images/linkedin.png); background-repeat: no-repeat; background-position:0 0;  transition:all 0.3s ease 0s;}
+.footerbottom a:hover.facebook{background-position:0 -51px;}
+.footerbottom a:hover.twitter{background-position:0 -51px; }
+.footerbottom a:hover.linkdin{background-position:0 -51px
+
